@@ -127,12 +127,6 @@ span {
   height: 590px;
 }
 
-.rating {
-  border-top: 3px solid #d10f17;
-  width: 100%;
-  height: 550px;
-}
-
 .footer {
   overflow: hidden;
   position: relative;

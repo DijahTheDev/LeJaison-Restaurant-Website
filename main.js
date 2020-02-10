@@ -1,11 +1,11 @@
 $(document).ready(function() {
-    $.get("https://obscure-tundra-54269.herokuapp.com/fine-dining", function(
-        data
-    ) {
-        //appetizers
-        let menu = data.appetizers
-            .map(function(menus) {
-                return `
+  $.get("https://obscure-tundra-54269.herokuapp.com/fine-dining", function(
+    data
+  ) {
+    //appetizers
+    let menu = data.appetizers
+      .map(function(menus) {
+        return `
                 <div class="menus">
                   <p class="title">${menus.name}</p>
                     <p class="price">${menus.price}</p>
@@ -22,15 +22,15 @@ $(document).ready(function() {
                     ""} </p>
                  
                 </div>`
-            })
-            .join("")
+      })
+      .join("")
 
-        $(".appetizersContainer").html(menu)
+    $(".appetizersContainer").html(menu)
 
-        //entrees
-        let menu2 = data.entrees
-            .map(function(menus2) {
-                return `
+    //entrees
+    let menu2 = data.entrees
+      .map(function(menus2) {
+        return `
                 <div class="menus">
                   <p class="title">${menus2.name}</p>
                   <p class="price">${menus2.price}</p>
@@ -47,15 +47,15 @@ $(document).ready(function() {
                       ""} </p>
                   
                 </div>`
-            })
-            .join("")
+      })
+      .join("")
 
-        $(".entreesContainer").html(menu2)
+    $(".entreesContainer").html(menu2)
 
-        //desserts
-        let menu3 = data.desserts
-            .map(function(menus3) {
-                return `
+    //desserts
+    let menu3 = data.desserts
+      .map(function(menus3) {
+        return `
               <div class="menus">
                 <p class="title">${menus3.name}</p>
                 <p class="price">${menus3.price}</p>
@@ -73,9 +73,9 @@ $(document).ready(function() {
                 </p>
               
               </div>`
-            })
-            .join("")
+      })
+      .join("")
 
-        $(".dessertsContainer").html(menu3)
-    })
+    $(".dessertsContainer").html(menu3)
+  })
 })

@@ -5,6 +5,8 @@ main {
 
 .slider {
   display: flex;
+  border-top: #d10f17;
+  border-bottom: #d10f17;
 }
 
 .header {
@@ -100,17 +102,14 @@ button {
   width: 260px;
 }
 
-/* khadijah  */
-
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
 
-/* Justin */
 body {
-  background-color: #1a1a1a;
+  background-color: black;
 }
 
 /* scrollbar */
@@ -140,6 +139,7 @@ body {
   height: 100%;
   display: flex;
   justify-content: space-between;
+  border-bottom: 4px solid #d10f17;
 }
 .logo {
   width: 250px;
@@ -166,26 +166,31 @@ ul {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 1.3em;
 }
+
 .mainPic > img {
   width: 100%;
+  height: 591px;
 }
 .appetizersContainer {
   background-color: white;
   display: flex;
   font-family: "Open Sans Condensed", sans-serif;
   padding: 10px;
+  border-top: 6px solid #d10f17;
 }
 .entreesContainer {
   background-color: white;
   display: flex;
   font-family: "Open Sans Condensed", sans-serif;
   padding: 10px;
+  border-top: 6px solid #d10f17;
 }
 .dessertsContainer {
   background-color: white;
   display: flex;
   font-family: "Open Sans Condensed", sans-serif;
   padding: 10px;
+  border-top: 6px solid #d10f17;
 }
 .menus {
   padding: 10px;
@@ -202,15 +207,50 @@ h1 {
   color: white;
 }
 #map {
-  width: 100%;
-  height: 400px;
+  width: 250px;
+  height: 250px;
   background-color: grey;
+  margin-left: 40px;
 }
 .item > img {
-  height: 400px;
-  width: 400px;
+  height: 480px;
+  width: 480px;
+  margin: 1px;
 }
-/* khadijah */
+.banner {
+  border-top: 3px solid red;
+  border-bottom: 3px solid red;
+  text-align: center;
+  height: 230px;
+  background-color: black;
+  color: white;
+}
+
+.banner2 {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0px;
+}
+
+#banner {
+  font-size: 40px;
+  font-family: "Open Sans Condensed", sans-serif;
+  margin-bottom: -6px;
+}
+
+.banner:before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 10px 0 10px;
+  border-color: #f70411 transparent transparent transparent;
+  margin-bottom: 15px;
+  padding: none;
+}
 div img {
   width: 100%;
   height: 550px;
@@ -219,75 +259,84 @@ div img {
 .abtUs {
   position: absolute;
   width: 300px;
-  height: 450px;
+  height: 490px;
   color: white;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
   font-size: 18px;
   border: red solid 4px;
   background-color: black;
   margin-left: 100px;
-  margin-top: 30px;
+  margin-top: 20px;
   padding: 20px 20px 0px 20px;
   opacity: 0.8;
 }
 
 h3 {
   margin: 0;
-  font-size: 25px;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-size: 20px;
 }
 .text {
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
   color: red;
   margin: 0;
+  font-size: 30px;
 }
 
 .rsvp {
   text-decoration: none;
   color: white;
+  font-size: 12px;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   padding: 5px;
+}
+
+.topBarMenu1:hover {
+  color: red;
 }
 
 .rsvp:hover {
   color: red;
 }
 
-#stage {
+.ph {
   width: 100%;
   height: 450px;
+  background-color: black;
 }
 
 .sigMeal {
   position: absolute;
-  width: 610px;
-  height: 510px;
+  width: 310px;
+  height: 546px;
   color: white;
   font-size: 14px;
   border: red solid 4px;
   background-color: black;
-  margin-left: 374px;
-  margin-top: 30px;
+  margin-left: 610px;
+  margin-top: 20px;
   padding: 20px 20px 10px 20px;
   opacity: 0.9;
+  background-color: black;
 }
 
 p.sigMealP {
-  font-size: 9px;
-}
-
-.text {
-  font-size: 35px;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px;
 }
 
 .mealOfTheDay {
-  width: 300px;
-  height: 300px;
-  margin-left: 150px;
+  width: 250px;
+  height: 250px;
+  margin-left: 8px;
   margin-top: 25px;
 }
 
 span {
   font-weight: bold;
-  font-size: 28px;
+  font-size: 20px;
 }
 
 #desc {
@@ -297,13 +346,13 @@ span {
 .blog {
   position: absolute;
   width: 300px;
-  height: 526px;
+  height: 546px;
   color: white;
-  font-size: 17px;
+  font-size: 13px;
   border: red solid 4px;
   background-color: black;
-  margin-left: 959px;
-  margin-top: 30px;
+  margin-left: 1019px;
+  margin-top: 20px;
   padding: 20px 20px 0px 20px;
   opacity: 0.8;
 }
@@ -323,7 +372,7 @@ span {
 
   font-size: 14px;
   line-height: 1.3;
-  border-top: 3px solid #d10f17;
+  border-top: 6px solid #d10f17;
   background-color: #1a1a1a;
   color: white;
 }
@@ -336,11 +385,13 @@ h2 {
   color: #d10f17;
   font-family: verdana;
   align-self: center;
+  margin-left: 40px;
 }
 
 ul {
   margin: 0;
   padding: 0;
+  margin-left: 40px;
 }
 
 li {
@@ -349,15 +400,15 @@ li {
 }
 
 .fab {
-  font-size: 20px;
+  font-size: 30px;
   color: red;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   margin-right: 22px;
-  padding-bottom: 50px;
+  padding-top: 20px;
 }
 
 p {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 /* h5 {
